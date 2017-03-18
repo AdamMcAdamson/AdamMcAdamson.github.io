@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <meta charset="utf-8">
-	<title>Adam Brunn's Porfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<title>Punk Hangman</title>
+    
 </head>
-
 <body>
-	<div id="master-div">
-	    <header id="header-container">          
-			<nav id="nav-bar">
-				<h1 id="nav-title">Adam Brunn</h1>
-				<ul id="nav-list">
-					<li class="nav-list-item"><a class="nav-link" href="index.html">About</a></li>
-					<li class="nav-list-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-					<li class="nav-list-item" id="right-list-item"><a class="nav-link" href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+<div id="master-div">
+	<header id="header-jumbo" class=" text-center">
+		<h1 id="header-main">Hangman</h1>
+		<h2 id="header-sub">Gone Punk</h2>
+	</header>
 
-		<div id="content-container">
-			<section id="content-section"> 	
-				<article class="content-article">
-					<h2 class="article-head">About Me</h2>
-	       			<hr class="article-line">
-	        		<p class="article-text">
-	        		<img class="article-img" src="assets/images/adamProfilePicture.jpg" alt="Adam">
-	            		Hey there! Welcome to my site. My name is Adam Brunn and I am a self-taught software developer of 8 years. My first significant project was when I built Mod-Tools for Xbox 360 gamesaves. I am currently in a web development boot camp, hosted by the University of Texas, where I plan to hone my developer skills to transition into a full time web development career.
-	        		</p>
-	        		<p class="article-text">
-	                	If there is one thing you should know about me, it's that I am a problem solving junkie. My passions outside of software development include philosophy, gaming and becoming the best me. I am a cronic internet hipster, being an early supporter of many now-viral internet services. These services include Spotify (2012), Discord (Alpha 2015), Twitch.tv (2012), and games like League of Legends (Pre-Season 2010) and Minecraft (Alpha 1.1 2010). 
-	            	</p>
-	            </article>
-	        </section>
-	        <aside id="aside-container">
-	            <h3 id="aside-head">Connect with Me</h3>
-	            <hr id="aside-line">
-	            <a href="https://www.github.com/AdamMcAdamson" target="_blank"><img class="connect-img" src="assets/images/githubLogo.png" alt="Github"></a>
-	            <a href="https://www.linkedin.com/in/adammcadamson" target="_blank"><img class="connect-img" src="assets/images/linkedinLogo.png" alt="LinkedIn"></a>
-	            <a href="https://twitter.com/AdamMcAdamson" target="_blank"><img class="connect-img" src="assets/images/twitterLogo.png" alt="Twitter"></a>
-	        </aside>
+<!-- TODO: Re-Indent -->
+
+	<section id="game-section" class="text-center">
+		<div>
+			<article class="col-md-2"></article>
+
+			<article id="game-container" class="col-md-8 text-center">
+				<div id="game-directions-div">
+					<h3 id="game-directions">Press Any Key To Start!</h3>
+				</div>
+				<div id="game-window">
+					<span id="win-span">
+						<h1 id="win-text">YOU WIN!</h1>
+						<img id="win-img" src="http://images4.fanpop.com/image/photos/14900000/Punk-s-not-dead-punk-rock-14926257-500-396.jpg" alt="PUNK IS NOT DEAD">
+					</span>
+					<h3 class="game-info">Current Word</h3>
+					<h3 id="word-guess-display" class="spacing"></h3>
+					<h3 class="game-info">Number of Guesses Remaining</h3>
+					<h3 id="num-guesses-remaining">hi</h3>
+					<h3 class="game-info">Wrong Letters Guessed</h3>
+					<h3 id="wrong-letters">hi</h3>
+				</div>
+			</article>
+
+			<div id="wins-counter-div" class="col-md-2">
+				<h3 id="wins-display">Wins: 0</h3>
+			</div>
 		</div>
-	    <footer>
-	        <h5 id="copywrite-text">&copy; Copywrite 2017 Adam Brunn</h5>
-	    </footer>
-	</div>
+	</section>
+
+
+</div>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
